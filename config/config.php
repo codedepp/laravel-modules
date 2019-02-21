@@ -99,10 +99,10 @@ return [
         'generator' => [
             'config' => ['path' => 'Config', 'generate' => true],
             'command' => ['path' => 'Console', 'generate' => true],
-            'migration' => ['path' => 'Database/Migrations', 'generate' => true],
-            'seeder' => ['path' => 'Database/Seeders', 'generate' => true],
-            'factory' => ['path' => 'Database/factories', 'generate' => true],
-            'model' => ['path' => 'Entities', 'generate' => true],
+            'migration' => ['path' => 'Database/Migrations', 'generate' => false],
+            'seeder' => ['path' => 'Database/Seeders', 'generate' => false],
+            'factory' => ['path' => 'Database/factories', 'generate' => false],
+            'model' => ['path' => 'Models/Entities', 'generate' => true],
             'controller' => ['path' => 'Http/Controllers', 'generate' => true],
             'filter' => ['path' => 'Http/Middleware', 'generate' => true],
             'request' => ['path' => 'Http/Requests', 'generate' => true],
@@ -111,7 +111,8 @@ return [
             'lang' => ['path' => 'Resources/lang', 'generate' => true],
             'views' => ['path' => 'Resources/views', 'generate' => true],
             'test' => ['path' => 'Tests', 'generate' => true],
-            'repository' => ['path' => 'Repositories', 'generate' => false],
+            'repository' => ['path' => 'Models/Repositories', 'generate' => false],
+            'eloquent' => ['path' => 'Models/Eloquent', 'generate' => false],
             'event' => ['path' => 'Events', 'generate' => false],
             'listener' => ['path' => 'Listeners', 'generate' => false],
             'policies' => ['path' => 'Policies', 'generate' => false],
@@ -148,10 +149,10 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'nwidart',
+        'vendor' => 'Codedepp',
         'author' => [
-            'name' => 'Nicolas Widart',
-            'email' => 'n.widart@gmail.com',
+            'name' => 'Depp',
+            'email' => 'johnnyhoangit@gmail.com',
         ],
     ],
     /*
